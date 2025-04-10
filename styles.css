@@ -1,0 +1,564 @@
+*   {
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    
+   }
+   
+  
+  body {
+    background: #181733;
+    background-repeat: no-repeat;
+    font-family: "Nunito Sans", serif;
+}
+
+
+
+
+    .header {
+        display: none;
+    }
+    .header_mobile {
+        padding-top: 20px;
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    .header_mobile i {
+        color: white;
+        font-size: 30px;
+    }
+    .Home {
+        color: white;
+        font-family: "Nunito Sans", serif;
+    }
+    .Home h1 {
+        font-size: 45px;
+        font-weight: 800;
+        opacity: 0;
+        animation: slideBottom .6s ease-in  forwards;
+        animation-delay: 1.8s;
+    }
+    .Home p {
+        opacity: 0;
+       animation: slideRight .6s ease-in  forwards;
+       animation-delay: 1.8s;
+    }
+
+    .Home .btn {
+       width: 166px; 
+       height: 44px;
+       font-size: 16px;
+       font-weight: bold;
+       background: #5454d4;
+       color: white;
+       border: none;
+       opacity: 0;
+       animation: slideRight .6s ease-in  forwards;
+       animation-delay: 1.8s;
+      
+    }
+    .Home .btn:hover {
+        background: white;
+        color: #5454d4;
+        border: 2px solid #5454d4;
+        box-shadow: 0 0 10px rgba(244, 237, 237, 0.231);
+    }
+    
+    .Home .btn >i {
+        font-size: 20px;
+        rotate: -135deg;
+        
+    }
+    .Home .btn:hover >i {
+        rotate: -45deg;
+    }
+
+    .img {
+        background-image: url(/portforlio1/images/Vector\ 15.png), url(/portforlio1/images/Group\ 162527.png), url(/portforlio1/images/Group\ 162529.png), url(/portforlio1/images/add.png);
+        background-position: 10% 20%, 10% 90%, 90% 10%, 90% 80%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+        background-size: 50px;
+        opacity: 0;
+        animation-delay: 2s;
+        animation: slideLeft 2s ease forwards;
+    }
+    .outer_rhombus {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        overflow: hidden;
+        rotate: 20deg;
+    }
+    .outer_rhombus img {
+        overflow: hidden;
+        rotate: -20deg;
+        margin-left: -5px;
+        margin-top: 10px;
+    }
+    .rhombus {
+        width: 200px;
+        height: 200px;
+        border: 2px solid white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background:#5454d4;
+        position: relative;
+
+    }
+    .rhombus2 {
+        width: 200px;
+        height: 200px;
+        border: 2px solid white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        position: absolute;
+        z-index: -1;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .rhombus img {
+        width: 120%; 
+        position: absolute;
+        top: -70px; 
+        left: -30px
+    }
+    .video {
+        color: white;
+        background-image:  url(/portforlio1/images/Group\ 162527.png);
+        background-position: 15% 103%;
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+
+    .video h2 {
+        font-weight: 800;
+        font-size: 32px;
+    }
+   .video img {
+    margin-left: 10%;
+   }
+    .Services {
+        text-align: center;
+    }
+    .Services h2 {
+        color: white;
+        font-weight: 900;
+    }
+    
+.service_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1.5rem;
+    background-image: url(/portforlio1/images/add.png);
+    background-position: 10% 101%;
+    background-size: 40px;
+    background-repeat: no-repeat;
+
+}
+.service_item {
+    position:  relative;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-align: center;
+    color: white;
+}
+.service_item:hover {
+    background-color:#2e2e5b;
+    cursor: pointer;
+}
+.service_item p {
+    font-weight: 100;
+}
+.Services h2 {
+    text-align: left;
+}
+.buttons {
+    text-align: center;
+}
+.buttons button {
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 22px;
+    border: none;
+    color: white;
+    background-color: #474749;
+    margin-top: 30px;
+}
+
+.Contact h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+}
+.Contact button {
+    width: 166px; 
+    height: 44px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #5454d4;
+    margin-top: 30px;
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px rgba(244, 237, 237, 0.231);
+}
+
+.Contact {
+    background: #1e1e20;
+    padding: 20px 0px;
+    background-image: url(/portforlio1/images/add.png), url(/portforlio1/images/Group\ 162529.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 100% 0%, 0% 100%;
+    padding-bottom: 50px;
+}
+.portforlio h2{
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+}
+.portforlio {
+    background-image: url(/portforlio1/images/Group\ 162529.png);
+    background-position: 80% 10%;
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+.prev, .next {
+    position: relative;
+    display: flex;
+    top: 20%;
+    transform: translateY(-50%);
+    background: #474749;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+.prev:hover, .next:hover {
+    background: #5454d4;
+}
+.dots {
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.active { background-color: #333; }
+.outer {
+    
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.outer .car_buttons {
+    display: inline-flex;
+    margin-left: 40%;
+    margin-top:40px;
+}
+ footer {
+    text-align: center;
+
+ }
+ footer a, footer p {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+ }
+ footer li {
+    list-style-type: none;
+    padding: 20px;
+ }
+ .carousel2-container {
+    display: none;
+ }
+ @media (min-width: 800px)
+  {
+    body {
+        margin-left: 40px;
+        overflow-x: hidden;
+    }
+    .Home .first {
+        width: 60%; 
+        background: linear-gradient(45deg, #ffffff, #1e1e20,);
+        animation: gradientAnimation 4s ease infinite;
+    }
+     .header_mobile {
+        display: none;
+     }
+     .header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 8%;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+     }
+     .navbar a{
+        display: inline-block;
+        font-size:  18px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        margin: 0 20px;
+        opacity: 0;
+        transition: .3s;
+        animation: slideTop .5s ease forwards;
+        animation-delay: calc(.2s * var(--i));
+       
+    }
+    .navbar a:hover,
+    .navbar a.active {
+        color: #1743e3;
+    }
+    .logo {
+        color: #222;
+        text-decoration: none;
+        font-weight: 600;
+        margin-left: -90px;
+        opacity: 0;
+        animation: slideRight 1s ease forwards;
+    }
+    .Home {
+        display: inline-flex;
+    }
+    .Home h1 {
+        font-size: 50px;
+        font-weight: 1000;
+    }
+    .outer_rhombus  {
+        width: 300px;
+        height: 300px;
+    }
+    .rhombus {
+        width: 250px;
+        height: 250px;
+    }
+    .rhombus2 {
+        width: 250px;
+        height: 250px; 
+    }
+    .in_video {
+        display: inline-flex;
+    }
+    section {
+        margin-top: 30px;
+    }
+    .in_video h2{
+        width: 60%;
+        font-weight: 800;
+        font-size: 45px;
+    }
+    .in_video p {
+        padding-top: 30px;
+    }
+    .Services h2 {
+        font-weight: 800;
+        font-size: 45px;
+        text-align: center;
+        width: 70%;
+        margin-left: 10%;
+    }
+    .Services {
+        background-image: url(/portforlio1/images/Group\ 162527.png);
+        background-repeat: no-repeat;
+        padding-top: 40px;
+
+    }
+    .prev, .next{
+        display: none;
+    }
+    .dots {
+        display: flex;
+    }
+    .Contact {
+        padding: 80px 40px;
+        margin-top: 200px;
+        display: inline-flex;
+        width: 110%;
+        margin-left: -40px;
+    }
+    .Contact h2 {
+        font-size: 40px;
+        font-size: 800;
+        width: 60%;
+    }
+    .Contact button {
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+    footer li {
+        display: inline-flex;
+    }
+    .contact_us {
+        text-decoration: none;
+        color: white;
+        border: 2px solid white;
+        padding: 7px 30px;
+        opacity: 0;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 1.3s;
+    }
+    .contact_us:hover {
+        color: #5454d4;
+        border-color: #5454d4;
+        transition: 0.3s ease-in-out;
+    }
+    .carousel2-container {
+        display: flex;
+        position: relative;
+        width: 80%;
+        overflow: hidden;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .carousel2 {
+
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none; 
+    }
+
+    .carousel2::-webkit-scrollbar {
+        display: none; 
+    }
+
+    .carousel2-item {
+        flex: 0 0 33.33%; /* Show 3 items at a time */
+        scroll-snap-align: center;
+        background: #222;
+        border-radius: 15px;
+        overflow: hidden;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .carousel2-item img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.2);
+        border: none;
+        cursor: pointer;
+        padding: 10px 15px;
+        border-radius: 50%;
+        color: white;
+        font-size: 20px;
+        transition: 0.3s;
+        display: none;
+    }
+
+    .nav-btn:hover {
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .prev2 { left: -40px; }
+    .next2 { right: -40px; }
+    .outer {
+        display: none;
+    }
+ }
+/* key frames */
+@keyframes slideTop {
+    0% {
+       transform: translateY(100px);
+       opacity: 0; 
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1; 
+     }
+}
+@keyframes slideRight {
+    0% {
+       transform: translateX(-100px);
+       opacity: 0; 
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1; 
+     }
+}
+@keyframes slideLeft {
+    0% {
+       transform: translateX(100px);
+       opacity: 0; 
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1; 
+     }
+}
+@keyframes slideTop {
+    0% {
+       transform: translateY(100px);
+       opacity: 0; 
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1; 
+     }
+}
+@keyframes slideBottom {
+    0% {
+       transform: translateY(-100px);
+       opacity: 0; 
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1; 
+     }
+}
